@@ -1,6 +1,8 @@
 import { combineReducers } from "redux";
 
+import TabReducer from "../common/tab/tabReducer";
+
 const rootReducer = combineReducers({
-  dashboard: () => ({ sumary: { credit: 0, debt: 0 } })
+  tab: TabReducer
 });
 export default rootReducer;
