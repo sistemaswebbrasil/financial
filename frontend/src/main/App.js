@@ -3,6 +3,7 @@ import React from "react";
 import Header from "../common/template/Header";
 import Sidebar from "../common/template/Sidebar";
 import Footer from "../common/template/Footer";
+import Messages from "../common/msg/Messages";
 import Routes from "./Routes";
 
 const App = () => {
@@ -14,6 +15,7 @@ const App = () => {
         <Routes />
       </div>
       <Footer />
+      <Messages />
     </div>
   );
 };
