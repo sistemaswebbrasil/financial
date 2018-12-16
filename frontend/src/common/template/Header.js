@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
+import CustomMenu from "./CustomMenu";
 
 const Header = () => {
   return (
@@ -15,6 +16,7 @@ const Header = () => {
       </Link>
       <nav className="navbar navbar-static-top">
         <a className="sidebar-toggle" data-toggle="offcanvas" />
+        <CustomMenu />
       </nav>
     </header>
   );
