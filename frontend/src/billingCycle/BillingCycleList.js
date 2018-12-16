@@ -17,13 +17,13 @@ class BillingCycleList extends Component {
         <td>{bc.year}</td>
         <td>
           <button
-            className="btn btn-warning"
+            className="btn btn-warning btn-xs"
             onClick={() => this.props.showUpdate(bc)}
           >
             <i className="fa fa-pencil" />
           </button>
           <button
-            className="btn btn-danger"
+            className="btn btn-danger btn-xs"
             onClick={() => this.props.showDelete(bc)}
           >
             <i className="fa fa-trash-o" />
