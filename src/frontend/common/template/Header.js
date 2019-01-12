@@ -10,7 +10,7 @@ const Header = () => {
         </span>
         <span className="logo-lg">
           <i className="fa fa-money" />
-          <b> Financial</b> $
+          <b> Financial Teste</b> $
         </span>
       </Link>
       <nav className="navbar navbar-static-top">

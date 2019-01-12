@@ -8,7 +8,8 @@ const externals = {
 const outputDirectory = "dist";
 
 module.exports = {
-  entry: ["babel-polyfill", "./src/index.js"],
+  entry: ["babel-polyfill", "./src/frontend/index.js"],
+
   output: {
     path: path.join(__dirname, outputDirectory),
     filename: "bundle.js"
@@ -34,7 +35,10 @@ module.exports = {
   },
   devServer: {
     port: 3000,
-    open: true
+    open: true,
+    proxy: {
+      "/api": "http://localhost:8080"
+    }
   },
   plugins: [
     new CleanWebpackPlugin([outputDirectory]),
@@ -45,7 +49,8 @@ module.exports = {
   ],
   resolve: {
     alias: {
-      jquery: "jquery/src/jquery"
+      jquery: "jquery/src/jquery",
+      node_modules: path.resolve(__dirname, "node_modules")
     }
   }
 };
