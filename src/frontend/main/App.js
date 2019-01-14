@@ -4,16 +4,21 @@ import Sidebar from "../common/template/Sidebar";
 import Footer from "../common/template/Footer";
 import Messages from "../common/msg/Messages";
 import Routes from "./Routes";
+import { HashRouter } from "react-router-dom";
 
 const App = props => {
   return (
-    <div className="wrapper">
-      <Header />
-      <Sidebar />
-      <Routes />
-      <Footer />
-      <Messages />
-    </div>
+    <HashRouter>
+      <div className="wrapper">
+        <Header />
+        <Sidebar />
+        <div className="content-wrapper">
+          <Routes />
+        </div>
+        <Footer />
+        <Messages />
+      </div>
+    </HashRouter>
   );
 };
 

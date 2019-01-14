@@ -20,9 +20,7 @@ const store = applyMiddleware(multi, thunk, promise)(createStore)(
 
 ReactDOM.render(
   <Provider store={store}>
-    <Router>
-      <AuthOrApp />
-    </Router>
+    <AuthOrApp />
   </Provider>,
 
   document.getElementById("root")
